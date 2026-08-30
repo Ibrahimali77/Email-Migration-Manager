@@ -1,0 +1,15 @@
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.ibrahim.app.MainController">
+
+    <TextField fx:id="emailField" promptText="Enter your email" prefWidth="300"/>
+
+    <Button text="Scan Accounts" onAction="#handleScan"/>
+
+    <TableView fx:id="tableView" prefWidth="400" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="serviceCol" text="Service" prefWidth="150"/>
+            <TableColumn fx:id="subjectCol" text="Subject" prefWidth="250"/>
+        </columns>
+    </TableView>
+
+</VBox>
